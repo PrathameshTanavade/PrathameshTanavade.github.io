@@ -67,8 +67,7 @@ html:hover {
 }
 
 .green-box p{
-	font-size:medium;
-	
+	font-size: medium;
 	margin:0.2em 1em 0.2em 1em;
 	color:#64ffda;
 }
@@ -242,7 +241,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ccd6f6;
+		color: #e6f1ff;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
@@ -295,7 +294,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size:medium;
+		font-size:1em;
 	}
 
 	h4 {
@@ -309,6 +308,8 @@ input, select, textarea {
 	h6 {
 		font-size: 0.6em;
 	}
+
+	
 
 	@media screen and (max-width: 736px) {
 
@@ -335,6 +336,10 @@ input, select, textarea {
 		h6 {
 			font-size: 0.6em;
 		}
+
+		p {
+		font-size: 0.8em;
+	}
 
 	}
 
@@ -1907,24 +1912,22 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease;
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
-		background-color: transparent;
+		background-color:transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: #a8b2d1 !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color:#a8b2d1 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.6em;
+		font-size: 1em;
 		font-weight: bold;
-		height: calc(4.75em + 2px);
-		letter-spacing: 0.25em;
-		line-height: 4.75em;
+		
 		outline: 0;
-		padding: 0 3.75em;
+		padding: 0 1em;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
+		
 		white-space: nowrap;
 	}
 
@@ -1990,8 +1993,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
-			color: #0a192f !important;
+			background-color: #0a192f;
+			color: #e6f1ff !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2053,9 +2056,7 @@ input, select, textarea {
 				}
 /* Feature Icons */
 
-body  .feature-icons {
-	letter-spacing:0.05em;
-}
+
 
 ul.feature-icons {
 	list-style: none;
@@ -2086,14 +2087,14 @@ ul.feature-icons {
 		}
 
 		ul.feature-icons li:before {
-			background: #a8b2d1;
 			border-radius: 100%;
-			color: #0a192f;
+			color: #a8b2d1;
 			display: block;
 			height: 2.5em;
 			left: 0;
 			line-height: 2.5em;
 			position: absolute;
+			font-size:16px;
 			text-align: center;
 			top: 0;
 			width: 2.5em;
@@ -3129,7 +3130,7 @@ ul.feature-icons {
 		font-size: 16px;
 		margin-bottom:1em;
 		border-radius:10px;
-		align-items: center;
+		
 		
 	}
 	
@@ -3158,10 +3159,12 @@ ul.feature-icons {
 			background-repeat: no-repeat;
 			border-radius: 10px;
 			display: flex;
-			align-items: center;
+			align-items:center;
 			height:fit-content;
 			width: 100%;
-			margin: 2%;
+			margin-left: 2%;
+			align-items: center;
+			padding-top:3em;
 			
 			
 			
@@ -3302,6 +3305,13 @@ ul.feature-icons {
 				margin:inherit;
 			}
 
+			.spotlights > section > .content > .inner > .icons li >.green-box p{
+				font-size:0.8em;
+				margin:0.1em 0.8em 0.1em 0.8em;
+				color:#64ffda;
+			}
+	
+
 			
 
 		}
@@ -3345,10 +3355,7 @@ ul.feature-icons {
 			padding: 0.75em 0.75em;
 		}
 
-			table td > .green-box p{
-				font-size: 0.8em;
-			}
-
+			
 			table td > .green-box {
 				
 					background-color: rgba(100, 255, 218, 0.1);
@@ -3358,6 +3365,11 @@ ul.feature-icons {
 					vertical-align: middle;
 					border-radius:30px;
 			}
+
+			table td > .green-box p{
+				font-size: 0.8em !important;
+			}
+
 
 		table th {
 			color: #ffffff;
@@ -3777,16 +3789,16 @@ ul.feature-icons {
 				padding-top:50px;
 				font-size: 42px;
 				text-align:start !important;
-				color:#ccd6f6;
+				color:#e6f1ff;
 			}
 
 			#sidebar > .inner h2{
-				font-size: 27px;
-				color:#ccd6f6;
+				font-size: 2em;
+				color:#e6f1ff;
 			}
 
 			#sidebar > .inner > .icons{
-				font-size:27px;
+				font-size:1.5em;
 				color: #a8b2d1;
 			}
 
@@ -4064,6 +4076,13 @@ ul.feature-icons {
 			
 		}
 
+		@media screen and (max-width: 736px) {
+
+
+			#sidebar {
+				padding: 2em 2em 1em 2em;
+			}
+
 
 		@media screen and (max-width:600px){
 			
@@ -4072,11 +4091,13 @@ ul.feature-icons {
 			}
 			
 			#sidebar > .inner h1{
-				font-size:8vw; 
+				font-size:8vw;
+				 
 			}
 
 			#sidebar > .inner h2{
 				font-size:6vw;
+				padding:0em 0em 1em 0em;
 			}
 		}
 		
@@ -4107,9 +4128,9 @@ ul.feature-icons {
 
 			}
 
-			@media screen and (max-width: 736px) {
+			media screen and (max-width: 736px) {
 
-				#intro p {
+				#intro p {@
 					font-size: 1em;
 				}
 
