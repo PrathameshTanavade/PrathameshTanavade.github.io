@@ -1,15 +1,10 @@
-@import url(fontawesome-all.min.css);
+
 @import url(all.css);
 /*
 	Hyperspace by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
-
-html:hover {
-	background:radial-gradient(circle at 50% 35%,#345,rgba(0,0,0,.7))
-}
-
 
 
 
@@ -52,7 +47,10 @@ html:hover {
 
 }
 
-
+mark {
+	color:rgb(230, 241, 255, 10) !important;
+	opacity: 100% !important;
+}
 
 
 
@@ -326,7 +324,7 @@ input, select, textarea {
 		}
 
 		h4 {
-			font-size: 0.8em;
+			font-size: 1em;
 		}
 
 		h5 {
@@ -337,10 +335,7 @@ input, select, textarea {
 			font-size: 0.6em;
 		}
 
-		p {
-		font-size: 0.8em;
-	}
-
+		
 	}
 
 	sub {
@@ -2088,7 +2083,7 @@ ul.feature-icons {
 
 		ul.feature-icons li:before {
 			border-radius: 100%;
-			color: #a8b2d1;
+			color: #e6f1ff;
 			display: block;
 			height: 2.5em;
 			left: 0;
@@ -2098,6 +2093,10 @@ ul.feature-icons {
 			text-align: center;
 			top: 0;
 			width: 2.5em;
+		}
+
+		.inner  .features  li{
+			color:rgb(230, 241, 255) !important;
 		}
 
 
@@ -3136,15 +3135,20 @@ ul.feature-icons {
 	
 	.spotlights > section h4{
 		text-transform: uppercase;
-		letter-spacing: 0.15em;
+		letter-spacing: 0.1em;
 
+	}
+
+	.spotlights a h3{
+		letter-spacing:0.1em !important;
+		
 	}
 
 	.spotlights > section:hover {
 		background-color: rgba(169, 108, 209, 0.103);
 	
 	}
-	}
+	
 	
 
 		body.is-ie .spotlights > section {
@@ -3169,6 +3173,8 @@ ul.feature-icons {
 			
 			
 		}
+
+			
 
 			.spotlights > section > .image img {
 				
@@ -3306,7 +3312,7 @@ ul.feature-icons {
 			}
 
 			.spotlights > section > .content > .inner > .icons li >.green-box p{
-				font-size:0.8em;
+				
 				margin:0.1em 0.8em 0.1em 0.8em;
 				color:#64ffda;
 			}
@@ -3793,7 +3799,7 @@ ul.feature-icons {
 			}
 
 			#sidebar > .inner h2{
-				font-size: 2em;
+				font-size: 20px;
 				color:#e6f1ff;
 			}
 
